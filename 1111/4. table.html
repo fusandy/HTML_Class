@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            width: 500px;
+            border: 3px solid rgb(69, 156, 197);
+            border-collapse: collapse;
+            margin: 0 auto;      
+            /* margin 第一個數值是上下的邊界/第二個數值是左右的邊界(auto=依據瀏覽器視窗的寬度，先扣掉表格的寬度後，剩下區域左右平分，相對於把物件置中) */
+            
+        }
+
+        th, td {
+            border: 1px dotted rgb(230, 107, 107);
+            text-align: center;
+            padding: 10px;
+            vertical-align: bottom;
+        } 
+
+
+
+        tbody tr:nth-child(2n){background-color: lightgrey;}
+        tbody tr:nth-child(2n+1){background-color: rgb(243, 236, 140);}
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption><h4>表格標題</h4></caption>
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    <!-- table>(caption>h4)>(thead>tr>th*4)>(tbody>tr*3>td*4) -->
+
+
+
+    
+</body>
+</html>

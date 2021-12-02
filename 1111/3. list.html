@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+<style>
+    li {
+        color:slateblue;
+    } 
+
+    dt {
+        color:slategray;
+        font-size: x-large;
+    }
+    dd {
+        color: rgb(247, 149, 149)
+    }
+</style>
+
+
+</head>
+<body>
+    <a href="test.html">Back to Test Page</a> <br>
+    <!-- ul>li{item$$$}*5 -->
+    <ul>
+        <li>item001</li>
+        <li>item002</li>
+        <li>item003</li>
+        <li>item004</li>
+        <li>item005</li>
+    </ul>
+
+    <!-- ol>li{property$}*3 -->
+    <ol type="I">
+        <li>property1</li>
+        <li>property2</li>
+        <li>property3</li>
+    </ol>
+
+    <!-- dl>(dt+dd*2)+(dt+dd*2) 括號內單位一樣的話，可以用乘號倍數節省時間 --> 
+    <!-- dl>(dt+dd*2)*2 -->
+    <dl>
+        <dt>咖啡</dt>
+        <dd>美式</dd>
+        <dd>拿鐵</dd>
+        <dt>熱茶</dt>
+        <dd>紅茶</dd>
+        <dd>綠茶</dd>
+    </dl>
+
+    <!-- ul>li*3>a{item$$$} 超連結置入表單內 ; *3跟區塊元素<li>綁在一起-->
+    <ul>
+        <li><a href="">item001</a></li>
+        <li><a href="">item002</a></li>
+        <li><a href="">item003</a></li>
+    </ul>
+
+    <!-- ul>li/a{item$$$}*3 ; *3跟行內元素<a >綁在一起，表單會變成行內元素排列-->
+    <ul>
+        <li><a href="">item001</a><a href="">item002</a><a href="">item003</a></li>
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link </title>
+    <style>
+        /* ----四種超連結滑鼠反應個別宣告style---- */
+        a:link {
+            color: lightcoral;
+        }
+        a:visited {
+            color: lightskyblue;
+        }
+        a:hover {
+            color: lightslategray;
+        }
+        a:active {
+            color: slateblue;
+        }
+        /* ----兩兩一組宣告(順序不可變)---- */
+        a:link,  a:visited {
+            color: lightskyblue;
+            text-decoration: none;
+        }
+        a:hover, a:active {
+            color: lightslategray;
+            text-decoration: underline;
+        }
+        /* ----宣告class "box"的CSS樣式---- */
+        a.box:link,  a.box:visited {
+            color: rgb(144, 46, 209);
+            text-decoration: none;
+        }
+        a.box:hover, a.box:active {
+            color: rgb(236, 91, 135);
+            text-decoration: underline;
+        }
+        /* ----宣告class "box1"的CSS樣式---- */
+        a.box1:link,  a.box1:visited {
+            color: rgb(240, 182, 59);
+            text-decoration: none;
+        }
+        a.box1:hover, a.box1:active {
+            color: rgb(109, 179, 68);
+            text-decoration: underline;
+        }
+        /* 上方宣告完Class CSS樣式後，下方body要記得呼叫Class */
+
+    </style>
+</head>
+
+
+<body>
+    <h2>超連結設定</h2>
+
+    <a href="">第一種超連結</a> <br>
+    <a href="" class="box">第二種超連結</a> <br>
+    <a href="" class="box1">第三種超連結</a> <br>
+    
+
+</body>
+</html>

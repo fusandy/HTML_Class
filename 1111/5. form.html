@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset {
+            width: 500px;
+            border: 1px solid rgb(97, 51, 25);
+            margin: auto;
+            border-radius: 5px;
+        }
+        legend {
+            width: 120px;
+            border: 1px solid rgb(97, 51, 25);
+            border-radius: 5px;
+            padding: 5px 15px ;
+        }
+        em {
+            color: red;
+        }
+        .st {
+            width: 500px;
+            border-bottom: 1px dotted rgb(66, 64, 64);
+            margin: 20px;
+            padding-bottom: 10px;
+        }
+       .title {
+           width: 100px;
+           float: left;    
+           /* width沒有搭配float浮動，會無法顯示*/
+           text-align: right;
+           padding-right: 10px;
+           font-weight: bold;
+       } 
+       .btn {
+           text-align: center;
+       }
+       .btn input {
+           margin: 10px; 
+       }
+/* 不能把margin寫在.btn裡是因為該設定是btn與其他div的margin，若要設置按鈕之間的margin，必須.btn input */
+    </style>
+
+</head>
+<body>
+    <form action="#" method="post"></form>
+    <fieldset>
+        <legend style="font-weight: bold;">個人資料 - <em>(必填)</em></legend>
+
+        <div class="st">  <!-- .st + tab 快捷鍵 -->
+            <label class="title">姓名: </label> <!-- label.title + tab 快捷鍵 -->
+            <input type="text" name="account" size="40" maxlength="15" placeholder="請輸入真實姓名"> 
+        </div>
+
+        <div class="st">
+            <label class="title">密碼: </label>
+            <input type="password" name="pwd" size="40" maxlength="20" placeholder="至少8個字元且包含英文小寫字母/數字/符號"> 
+        </div>
+
+        <div class="st">
+            <label class="title">性別: </label>
+            <input type="radio" name="gender" value="male" checked>男
+            <input type="radio" name="gender" value="female">女
+        </div>
+
+        <div class="st">
+            <label class="title">運動: </label>
+            <input type="checkbox" name="hobby" value="baseball">棒球
+            <input type="checkbox" name="hobby" value="basketball">籃球
+            <input type="checkbox" name="hobby" value="swimming">游泳
+            <input type="checkbox" name="hobby" value="jogging">跑步
+            <input type="checkbox" name="hobby" value="dancing">舞蹈
+        </div>
+
+        <div class="st">
+            <label class="title">運動: </label>
+            <label><input type="checkbox" name="hobby" value="baseball">棒球</label>
+            <label><input type="checkbox" name="hobby" value="basketball">籃球</label>
+            <label><input type="checkbox" name="hobby" value="swimming">游泳</label>
+            <label><input type="checkbox" name="hobby" value="jogging">跑步</label>
+            <label> <input type="checkbox" name="hobby" value="dancing">舞蹈</label>
+        </div>
+
+        <div class="st">
+            <label class="title">意見反饋: </label>
+            <textarea name="memo" cols="40" rows="10" placeholder="請輸入您寶貴的意見"></textarea>
+        </div>
+
+        <div class="st">
+        <label class="title">居住地: </label>
+        <select name="address" id="address">
+            <option value="TPE">台北市</option>
+            <option value="TPH">新北市</option>
+            <option value="TYC">桃園市</option>
+            <option value="HSC">新竹市</option>
+        </select>
+        </div>
+        
+        <div class="btn">
+            <input type="reset" value="清除">
+            <input type="submit" value="送出">
+        </div>
+        
+    
+    </fieldset>
+    <!-- form 與 label都是行內元素，故可以用div把一區一區包起來後，去設置CSS樣式 -->
+
+
+
+</body>
+</html>

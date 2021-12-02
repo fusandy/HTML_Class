@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺北市立美術館 聯絡我們</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        img {
+            width: 300px;
+        }
+        nav {
+            width: 100%;
+            height: 130px;
+            background-color: rgb(199, 199, 199);
+            top: 0px;
+            padding: 5px 20px;
+            /* position: fixed;
+            z-index: 999; */
+        }
+        nav a {
+            float:left;
+            color: rgb(255, 255, 255);
+            background-color: rgba(138, 138, 138, 0.808);
+            margin-right: 20px;
+            margin-bottom: 5px;
+            padding: 5px 10px;        
+            border-radius: 10px;    
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: rgb(252, 236, 166);
+            color: rgb(51, 51, 51);
+        }
+        fieldset {
+            width: 700px;
+            margin: 20px auto;
+            border: 1px dashed rgb(102, 102, 102);
+            border-radius: 5px;
+        }
+        legend {
+            width: 20%;
+            border: 1px solid rgb(102, 102, 102);
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;            
+        }
+        .box {
+            width: 650px;
+            border-bottom: 1px dotted rgb(167, 167, 167);
+            margin: 20px 30px;
+            padding-bottom: 10px;            
+        }
+        .title {
+            width: 120px;
+            height: 50px;
+            float: left;
+            text-align: right;
+            padding-right: 15px;
+            font-weight: bold;
+        }
+        .mytext {
+            width: 350px;
+            height: 20px;
+            font-size: 12pt;
+        }
+        #abc {
+            height: 80px;
+        }
+        /* input {
+            clear: left;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 2px;
+        } */
+        textarea {
+            resize:none;
+        }
+        .btn {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .btn input {
+            margin: 5px;
+            border-radius: 5px;
+            background-color: rgb(8, 48, 65);
+            color:white;
+            padding: 5px 10px;
+        }
+        footer {
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            bottom:0;
+            background-color: rgba(199, 199, 199, 0.568);
+            padding: 10px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        footer img {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="top">
+            <ul>
+                <li><img src="images/logo.png" alt="logo"></li>
+                <li><a href="index.html">關於我們</a></li>
+                <li><a href="index.html#exhibition">近期展覽</a></li>
+                <li><a href="map.html">交通資訊</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>                
+            </ul>            
+        </nav>
+    </header>
+    <section>
+        <fieldset>
+            <form action="#" method="post"></form>
+            <legend>寫信給我們</legend>
+            
+            <div class="box">
+                <label for="" class="title">姓名: </label>
+                <input type="text" name="name" id="name" size="30" maxlength="40" placeholder="請輸入您的姓名" class="mytext">
+            </div>
+
+            <div class="box">
+                <label for="" class="title">聯絡信箱: </label>
+                <input type="text" name="mail" id="mail" size="50" maxlength="40" placeholder="請輸入您的聯絡信箱" class="mytext">
+            </div>
+
+            <div class="box">
+                <label for="" class="title" id="abc">參觀的展覽: <br>(可複選)</label>
+                <input type="checkbox" name="exhibition" value="piece_1">未竟之役：太空．家屋．現代主義 <br>
+                <input type="checkbox" name="exhibition" value="piece_2">走向世界：臺灣新文化運動中的美術翻轉力 <br>
+                <input type="checkbox" name="exhibition" value="piece_3">十年 - 台灣聲音地圖計劃／吳燦政個展 <br>
+                <input type="checkbox" name="exhibition" value="piece_4">感性機器：後資本主義時代的自我療癒 <br>
+                <input type="checkbox" name="exhibition" value="piece_5">接近─賴志盛</label>
+            </div>
+
+            <div class="box">
+                <label for="" class="title">您寶貴的意見: </label>
+                <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+            </div>
+
+            <div class="btn">
+                <input type="reset" value="清空">
+                <input type="submit" value="送出">
+            </div>
+
+        </fieldset>
+    </section>
+    <footer>
+        <p>臺北市立美術館 &copy; 2021</p>
+        <p>10461臺北市中山區中山北路三段181號　+886 2 2595 7656</p>
+        <img src="images/1200px-Emblem_of_Taipei_City.svg.png" alt="taipeicitylogo">
+    </footer>
+</body>
+</html>

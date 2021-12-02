@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    /* margin:0 貼邊，所有瀏覽器默認值為8px */
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 234, 175);
+        border: 3px solid #000;
+        margin: 10px;
+        float: left;
+    }
+    /* 以下重複宣告，會覆蓋div內的屬性質 */
+    .box2 {
+        border: 15px dashed rgb(31, 126, 170)
+    }
+    .box3 {
+        padding: 15px ;
+    }
+    a {
+        display: block;
+        /* 變成區塊元素 */
+        clear: left;
+        /* 行內元素改區塊元素後，該元素會重疊到上方浮動元素的下層，利用clear清除使得block下移*/
+        width: 50px;
+        height: 50px;
+        background-color: beige;
+        border: 1px solid #000;
+        margin-left: 10px;
+    }
+
+</style>
+
+
+
+<body>
+    <div class="box1">BOX1 106cm*106cm </div>
+    <div class="box2">BOX2 130cm*130cm</div>
+    <div class="box3">BOX3 130cm*130cm</div>
+
+
+    <a href="">AA</a><a href="">BB</a><a href="">CC</a>
+
+</body>
+</html>

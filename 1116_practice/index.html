@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺北市立美術館</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        img {
+            width: 300px;
+        }
+        nav {
+            width: 100%;
+            height: 130px;
+            background-color: rgb(199, 199, 199);
+            top: 0px;
+            padding: 5px 20px;
+            position: fixed;
+        }
+        nav a {
+            float:left;
+            color: rgb(255, 255, 255);
+            background-color: rgba(138, 138, 138, 0.808);
+            margin-right: 20px;
+            margin-bottom: 5px;
+            padding: 5px 10px;        
+            border-radius: 10px;    
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: rgb(252, 236, 166);
+            color: rgb(51, 51, 51);
+        }
+        /* section {         
+            padding-top: 150px;
+        } */
+        /* 因nav固定之後，section會跑版，故用絕對位置來指定開始高度 */
+        .box1 {
+            background-color: rgba(247, 213, 99, 0.856);
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 50%; 
+            text-align: center;
+            line-height: 50px;
+            font-size: 25px;
+            padding: 10px;
+            font-weight: 500;
+            color: #252222;
+        }
+        .box1 a {
+            text-decoration: none;
+            color: black;
+        }
+        .box1 a:hover {
+            color: white;
+        }
+        .box2 {
+            width: 65%;
+            margin: 10px auto 20px;
+            padding-top: 150px;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 5px 0px;
+        }
+        .box2 img {
+            width: 600px;
+            margin-bottom: 5px;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .box2 p {
+            line-height: 25px;
+            font-size: 15px;
+            text-align: justify;
+            color:#252222;
+        }
+        .box3 {
+            width: 65%;
+            margin: 10px auto;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 5px 0px;
+        }
+        .box3 img {
+            float: left;
+            width: 500px;
+            height: 250px;
+            padding-right: 15px;
+        }
+        .box3 li {
+            clear: left;
+            overflow: auto;
+            padding: 10px;
+        }
+        .box3 p {
+            text-align: left;
+            line-height: 25px;
+            font-size: 15px;
+            color:#252222;
+        }
+        .box3 li:hover {
+            background-color: rgb(224, 224, 222);
+        }
+        .box3 a {
+            text-decoration: none;
+            color: rgb(128, 128, 128);
+        }
+        .box3 a:hover {
+            color:rgb(158, 158, 158) ;
+        }
+        footer {
+            width: 100%;
+            height: 80px;
+            background-color: rgba(199, 199, 199, 0.568);
+            padding: 10px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        footer img {
+            width: 40px;
+        }      
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav id="top">
+            <ul>
+                <li><img src="images/logo.png" alt="logo"></li>
+                <li><a href="index.html">關於我們</a></li>
+                <li><a href="#exhibition">近期展覽</a></li>
+                <li><a href="map.html">交通資訊</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>                
+            </ul>            
+        </nav>
+    </header>
+    <section>
+        <div class="box1"><a href="#top">TOP</a></div>
+        <div class="box2">
+        <h2>關於我們</h2>
+        <p>
+            <img src="images/History&Architecture131231_2s.png" alt=""> <br>
+            臺北市立美術館(以下簡稱本館)於民國72年開館，為全國第一座現當代美術館，亦以首都美術館的高度自我期許。
+            <br>
+            <br>
+            <h4>宗旨</h4> <br>
+            <p>
+                本館肩負推動臺灣現當代藝術的保存、研究、發展與普及之使命，掌握全球趨勢、建立多元交流管道，提升普羅大眾對現當代藝術的認知與參與，促使臺灣現當代藝術發展臻至蓬勃，全民藝術涵養更加豐沛，以期形成具有美感修為及文化思辨力的當代社會。
+            </p>
+            <br>
+            <br>
+            <h4>目標</h4><br>
+            <ul>
+                <li><p>- 策辦各項臺灣現當代藝術展覽，傳播藝術訊息，鼓勵臺灣藝術學術與產業生產。</p></li>
+                <li><p>- 策辦《台北雙年展》及《威尼斯雙年展》，促進全球交流、擴大首都之文化視野及提升國際能見度。</p></li>
+                <li><p>- 蒐藏、保存、維護臺灣現當代藝術，維護美術歷史資產，建構公共記憶。</p></li>
+                <li><p>- 研究整理臺灣現當代藝術史料，透過文獻庫彙整、圖書出版，促進美術知識生產，並推動知識普及化。</p></li>
+                <li><p>- 舉辦「臺北美術獎」，培養當代藝術創作人才。</p></li>
+                <li><p>- 規劃分齡分眾藝術教育計畫，強化自主學習平臺，以普及美術認知、增強文化思辨力。</p></li>
+                <li><p>- 推動創意行銷策略，提供精緻文化休憩空間，豐富參訪經驗，並提升觀眾的藝術素養與品味。</p></li>
+            </ul>
+        </p>
+        </div>
+
+        <div class="box3" id="exhibition">
+            <h3>近期展覽</h3>
+            <ul>
+                <li>
+                    <p>
+                        <img src="images/20211001092802512148.jpg" alt="01">
+                        未竟之役：太空．家屋．現代主義<br>
+                        二樓2A~2B <a href="piece_1.html">(詳情)</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="images/20210902153249794424.jpg" alt="02">
+                        走向世界：臺灣新文化運動中的美術翻轉力<br>
+                        三樓3A <a href="piece_2.html">(詳情)</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="images/20210830171549724399.jpg" alt="03">
+                        十年 - 台灣聲音地圖計劃／吳燦政個展<br>
+                        三樓3B <a href="piece_3.html">(詳情)</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <img src="images/20210824150338621326.jpg" alt="04">
+                        感性機器：後資本主義時代的自我療癒<br>
+                        地下樓E、F展覽室 <a href="piece_4.html">(詳情)</a>
+                    </p>
+                </li>
+                <li>
+                    <p><img src="images/20210413171647826265.jpg" alt="05">
+                        接近─賴志盛<br>
+                        三樓3C 藝想迴廊 <a href="piece_5.html">(詳情)</a>
+                    </p>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>臺北市立美術館 &copy; 2021</p>
+        <p>10461臺北市中山區中山北路三段181號　+886 2 2595 7656</p>
+        <img src="images/1200px-Emblem_of_Taipei_City.svg.png" alt="taipeicitylogo">
+    </footer>
+</body>
+</html>

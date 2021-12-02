@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Practice</title>
+
+    <link rel="stylesheet" href="reset.css"> 
+    <!-- 插入CSS reset程式碼，並且貼在style宣告之前，把瀏覽器預設值歸零 -->
+
+    <style>
+    body {
+        margin:0
+    }
+    .wrap {
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid rgb(194, 194, 194);
+    }
+    header {
+        background-color: rgb(88, 201, 209);
+        height: 100px;
+    }
+    li {
+        display: inline-block; 
+        /* 右邊與下方默認有4px的寬度 */
+        border: 1px dotted rgb(194, 194, 194);
+        margin-right: -4px
+    }
+    /*  -----section----- */
+    section {
+        width: 70%;
+        float: left;
+        background-color: rgb(187, 240, 137);
+        /* width: 668px; */
+        /* display: inline-block; */
+            }
+    /*  -----aside----- */
+    aside {
+        width: 30%;
+        float: right;
+        
+        height: 200px;
+        background-color: rgb(245, 177, 203);
+        /* width: 284px; */
+        /* display: inline-block; */
+            }
+    /*  -----footer----- */
+    footer {
+        clear: both;
+        /* 有float就要clear */
+        height: 50px;
+        background-color:silver;
+        text-align: center; 
+        line-height: 50px;
+        /* text-align:center + line-height: 50px = 置中對齊 */
+    }
+
+
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1> 網頁名稱 </h1>
+            <nav>
+                <ul>
+                    <li>item01</li>
+                    <li>item02</li>
+                    <li>item03</li>
+                    <li>item04</li>
+                    <li>item05</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>我是大標題</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus, iure voluptatem eos ab cupiditate quisquam est hic dolores explicabo aliquam quaerat a? Itaque modi omnis expedita? Ipsam, iusto. Hic.
+            </p>
+            <figure>
+                <img src="600x400/Blue-Flower-with-Sharp-Thorns-600x400.jpg" alt="flower">
+                <figcaption>圖片解說</figcaption>
+            </figure>
+        </section>
+        <aside>
+
+        </aside>
+        <footer>
+            <p> &copy; 20211115 版權聲明 </p> 
+            <!-- &copy;版權符號 -->
+        </footer>
+    </div>  
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+h1, h2{
+    color: saddlebrown;
+}
+/* type標籤選取器，不需要tag(設屬性與屬性值)，可將同個樣式套用在多個標籤中 */
+.txt {
+    color: slateblue;
+}
+/* class類別選取器，可重複使用，前面需要使用. */
+#position {
+    color: teal;
+}
+/* id物件選取器宣告後，只能使用一次，前面需要使用# */
+div {
+    height:1000px;
+}
